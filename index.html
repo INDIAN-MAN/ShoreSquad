@@ -49,8 +49,23 @@
       </section>
 
       <section id="map" class="map-preview">
-        <h3>Map preview</h3>
-        <div id="mapPlaceholder" role="img" aria-label="Map preview showing pins" class="map-phantom">Map loading…</div>
+        <h3>Map preview — Next cleanup: Pasir Ris</h3>
+        <!-- Embedded Google Map centered at Pasir Ris with a labeled pin (Next Cleanup). -->
+        <div id="mapPlaceholder" class="map-phantom">
+          <iframe
+            title="Next Cleanup — Pasir Ris (Street View Asia)"
+            src="https://www.google.com/maps?q=1.381497,103.955574(Next+Cleanup)&z=16&output=embed"
+            width="100%"
+            height="360"
+            style="border:0;border-radius:8px;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <p class="map-caption">Cleanup starts at Street View Asia — coordinates 1.381497, 103.955574.
+            <a href="https://www.google.com/maps?q=1.381497,103.955574" target="_blank" rel="noopener noreferrer">Open in Google Maps</a>
+          </p>
+        </div>
       </section>
 
       <section id="join" class="cta">

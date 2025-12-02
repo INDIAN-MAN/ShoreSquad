@@ -11,6 +11,13 @@ const selectors = {
 // Feature: Lazy-load map assets when user opens map for the first time
 let mapLoaded = false;
 selectors.openMap?.addEventListener('click', async () => {
+  // If the page already includes an embedded map (iframe) just scroll to it
+  if (selectors.mapPlaceholder?.querySelector('iframe')) {
+    selectors.mapPlaceholder.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    return;
+  }
+
+  // Otherwise proceed with demo lazy-load flow for interactive map assets
   if (mapLoaded) return;
   mapLoaded = true;
   selectors.mapPlaceholder.textContent = 'Loading interactive map…';
@@ -20,8 +27,7 @@ selectors.openMap?.addEventListener('click', async () => {
   await new Promise(res => setTimeout(res, 700));
 
   selectors.mapPlaceholder.innerHTML = `<div style="padding:18px;text-align:center">📍 Interactive map active (demo)<br/><small>Pins and weather overlays will appear here</small></div>`;
-}
-)
+});
 
 // Learn more gently scroll
 selectors.learnMore?.addEventListener('click', () => {
