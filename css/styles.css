@@ -58,3 +58,17 @@ body{
 
 /* Accessibility helpers */
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;border:0;clip:rect(0 0 0 0);overflow:hidden}
+
+/* Forecast */
+.forecast{margin:28px 0;padding:18px;border-radius:var(--radius);background:linear-gradient(180deg, rgba(255,255,255,0.7), rgba(247,251,251,0.8));box-shadow:0 6px 18px rgba(11,138,134,0.06);border:1px solid rgba(11,138,134,0.06)}
+.forecast .muted{color:var(--muted-600);margin-top:0;margin-bottom:12px}
+.forecast-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px}
+.forecast-card{background:linear-gradient(180deg,#ffffff,#f4fffd);padding:12px;border-radius:10px;border:1px solid rgba(11,138,134,0.06);display:flex;flex-direction:column;align-items:center;gap:8px;min-height:120px}
+.forecast-day{font-weight:700}
+.forecast-temp{font-size:1.05rem;color:var(--sea-700)}
+.forecast-desc{color:var(--muted-600);text-align:center;font-size:0.9rem}
+.forecast-loading{padding:18px;color:var(--muted-600);text-align:center}
+
+@media (min-width:900px){
+  .forecast-grid{grid-template-columns:repeat(4,1fr)}
+}
