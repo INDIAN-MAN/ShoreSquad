@@ -26,7 +26,7 @@ selectors.openMap?.addEventListener('click', async () => {
   // This is where you'd initialize a real map (e.g., MapLibre, Mapbox GL, Leaflet)
   await new Promise(res => setTimeout(res, 700));
 
-  selectors.mapPlaceholder.innerHTML = `<div style="padding:18px;text-align:center">📍 Interactive map active (demo)<br/><small>Pins and weather overlays will appear here</small></div>`;
+  selectors.mapPlaceholder.innerHTML = `<div style="padding:18px;text-align:center">📍 Interactive map active (demo)<br/><small>Pins and weather overlays (temperatures in °C) will appear here</small></div>`;
 });
 
 // Learn more gently scroll
