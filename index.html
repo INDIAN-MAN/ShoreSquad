@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="ShoreSquad — Rally your crew, track weather, and hit the next beach cleanup with our dope map app." />
+    <title>ShoreSquad — Rally your crew</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="logo">ShoreSquad</h1>
+        <nav aria-label="Primary Navigation">
+          <ul class="nav">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#map">Map</a></li>
+            <li><a href="#join">Join</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <h2>Rally your crew, track weather, and hit the next beach cleanup</h2>
+        <p class="lead">Make eco-action social and fun — find events, plan around weather, and keep our shores clean.</p>
+        <div class="actions">
+          <button id="openMap" class="btn primary">Open Map</button>
+          <button id="learnMore" class="btn ghost">Learn more</button>
+        </div>
+      </section>
+
+      <section id="features" class="cards">
+        <article class="card">
+          <h3>Map & Events</h3>
+          <p>Find beaches, cleanups, and pin your squad's meetup spots.</p>
+        </article>
+
+        <article class="card">
+          <h3>Weather-aware</h3>
+          <p>Get quick weather previews and scheduling tips so your cleanups aren't washed out.</p>
+        </article>
+
+        <article class="card">
+          <h3>Social + Rewards</h3>
+          <p>Invite friends, share photos, and earn badges for impact.</p>
+        </article>
+      </section>
+
+      <section id="map" class="map-preview">
+        <h3>Map preview</h3>
+        <div id="mapPlaceholder" role="img" aria-label="Map preview showing pins" class="map-phantom">Map loading…</div>
+      </section>
+
+      <section id="join" class="cta">
+        <h3>Get your crew in</h3>
+        <p>Sign up to receive event alerts and weather-based plan nudges.</p>
+        <form id="joinForm" aria-label="Join ShoreSquad">
+          <input id="email" type="email" placeholder="your@email.com" aria-label="Email address" required />
+          <button type="submit" class="btn primary">Join the Squad</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>&copy; 2025 ShoreSquad — Built for coastal stewards.</small>
+        <nav aria-label="footer navigation">
+          <ul class="footer-links">
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Accessibility</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="js/app.js" type="module"></script>
+  </body>
+</html>
